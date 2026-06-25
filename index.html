@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PFO2 — Prompt Engineering en Agentes de IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f0ebe3;
+      --surface: #faf7f2;
+      --border: #d4c9b8;
+      --accent: #da7756;
+      --accent-dark: #b85e3f;
+      --text: #2c2218;
+      --text-muted: #7a6a58;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --radius: 0.9rem;
+      --transition: 0.25s ease;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background-image: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(218,119,86,.12) 0%, transparent 70%);
+    }
+    .wrap { width: 100%; max-width: 760px; }
+    .header { text-align: center; margin-bottom: 3rem; }
+    .tag {
+      display: inline-block; background: var(--accent); color: #fff;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+    .title {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      line-height: 1.1; margin-bottom: 0.75rem;
+    }
+    .title .accent { color: var(--accent); }
+    .subtitle { color: var(--text-muted); font-size: 1.05rem; max-width: 48ch; margin: 0 auto; }
+    .cards { display: flex; flex-direction: column; gap: 1rem; }
+    .card {
+      display: flex; align-items: center; gap: 1.25rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem;
+      text-decoration: none; color: inherit;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(44,34,24,.12);
+      border-color: var(--accent);
+    }
+    .card-num {
+      flex-shrink: 0;
+      width: 52px; height: 52px;
+      display: grid; place-items: center;
+      background: var(--accent); color: #fff;
+      font-family: var(--font-display); font-weight: 800; font-size: 1.3rem;
+      border-radius: 50%;
+    }
+    .card-body h2 { font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.25rem; }
+    .card-body p { color: var(--text-muted); font-size: 0.9rem; }
+    .card-arrow { margin-left: auto; color: var(--accent); font-size: 1.5rem; flex-shrink: 0; }
+    .footer { text-align: center; margin-top: 2.5rem; color: var(--text-muted); font-size: 0.85rem; }
+    @media (max-width: 480px) {
+      .card { flex-wrap: wrap; }
+      .card-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <span class="tag">PFO2 · Prompt Engineering</span>
+      <h1 class="title">Un prompt, <span class="accent">dos agentes</span> de IA</h1>
+      <p class="subtitle">Comparación de cómo dos agentes de desarrollo resuelven la misma instrucción para generar una landing page.</p>
+    </div>
+
+    <div class="cards">
+      <!-- Link 1: el prompt en texto plano -->
+      <a class="card" href="prompt.txt" target="_blank" rel="noopener">
+        <div class="card-num">01</div>
+        <div class="card-body">
+          <h2>Ver el Prompt utilizado</h2>
+          <p>El texto plano exacto que se ejecutó —sin modificar— en ambos agentes.</p>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <!-- Link 2: landing del agente 1 -->
+      <a class="card" href="agente-1-codex/index.html">
+        <div class="card-num">02</div>
+        <div class="card-body">
+          <h2>Landing — Agente 1: Codex (OpenAI)</h2>
+          <p>Modelo: [COMPLETAR, ej. GPT-5-Codex]</p>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <!-- Link 3: landing del agente 2 -->
+      <a class="card" href="agente-2-claude-code/index.html">
+        <div class="card-num">03</div>
+        <div class="card-body">
+          <h2>Landing — Agente 2: Claude Code</h2>
+          <p>Modelo: [COMPLETAR, ej. Claude Opus 4.5]</p>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+    </div>
+
+    <p class="footer">© 2026 Sebastián Vitcop · IFTS N°29 · Tecnicatura en Desarrollo Web</p>
+  </div>
+</body>
+</html>

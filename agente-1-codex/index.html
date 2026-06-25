@@ -1,9 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Pendiente — Codex</title>
-<style>body{font-family:sans-serif;background:#f0ebe3;color:#2c2218;display:grid;place-items:center;min-height:100vh;text-align:center;padding:2rem}</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vitcop Studio crea landing pages, sitios institucionales y aplicaciones web a medida para pymes, emprendedores y startups.">
+  <title>Vitcop Studio | Desarrollo web freelance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><div>
-<h1>⏳ Pendiente de generar</h1>
-<p>Acá va el <strong>index.html</strong> que genere <strong>Codex</strong>.<br>Reemplazá este archivo por completo con la salida del agente.</p>
-</div></body></html>
+<body>
+  <!-- Header principal -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">Vitcop Studio</a>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="primary-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Desarrollo web freelance</p>
+          <h1>Sitios web modernos para negocios que necesitan crecer con claridad.</h1>
+          <p class="hero-subtitle">
+            En Vitcop Studio diseño y desarrollo landing pages, sitios corporativos y soluciones web a medida con foco en rendimiento, confianza y detalle visual.
+          </p>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="btn btn-primary" href="#contacto">Trabajemos juntos</a>
+            <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <svg viewBox="0 0 560 430" role="img" aria-label="Ilustración de interfaz web y código">
+            <defs>
+              <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#dff3f0"/>
+              </linearGradient>
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#17262b" flood-opacity="0.14"/>
+              </filter>
+            </defs>
+            <rect x="66" y="48" width="408" height="298" rx="30" fill="url(#heroGradient)" filter="url(#shadow)"/>
+            <rect x="96" y="84" width="348" height="224" rx="18" fill="#ffffff"/>
+            <circle cx="125" cy="116" r="7" fill="#14343a" opacity="0.26"/>
+            <circle cx="149" cy="116" r="7" fill="#0f766e" opacity="0.56"/>
+            <circle cx="173" cy="116" r="7" fill="#14343a" opacity="0.38"/>
+            <rect x="124" y="158" width="148" height="14" rx="7" fill="#142126"/>
+            <rect x="124" y="194" width="250" height="12" rx="6" fill="#0f766e" opacity="0.78"/>
+            <rect x="124" y="224" width="202" height="12" rx="6" fill="#9dafb4"/>
+            <rect x="124" y="254" width="274" height="12" rx="6" fill="#d8e4e2"/>
+            <path d="M400 164l34 34-34 34" fill="none" stroke="#0f766e" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M80 268l-34-34 34-34" fill="none" stroke="#142126" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="430" cy="315" r="50" fill="#0f766e" opacity="0.12"/>
+            <path d="M407 315h46M430 292v46" stroke="#0f766e" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="section about" id="sobre-mi">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Sobre el estudio</p>
+          <h2>Un enfoque cercano, técnico y cuidado desde el primer boceto.</h2>
+          <p>
+            Soy Sebastián Vitcop, estudiante avanzado de la Tecnicatura en Desarrollo Web del IFTS N°29. Me apasiona construir interfaces limpias y soluciones a medida para cada cliente, combinando criterio visual con bases técnicas sólidas.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card reveal">
+            <span>Misión</span>
+            <h3>Crear soluciones web útiles</h3>
+            <p>Convertir objetivos de negocio en experiencias digitales claras, accesibles y preparadas para generar consultas reales.</p>
+          </article>
+          <article class="info-card reveal">
+            <span>Visión</span>
+            <h3>Ser un aliado técnico confiable</h3>
+            <p>Acompañar a pymes, emprendedores y startups con productos web mantenibles, modernos y fáciles de evolucionar.</p>
+          </article>
+          <article class="info-card reveal">
+            <span>Valores</span>
+            <h3>Detalle, honestidad y mejora continua</h3>
+            <p>Trabajar con comunicación clara, decisiones fundamentadas y atención artesanal en cada componente de la interfaz.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Servicios</p>
+          <h2>Desarrollo web para cada etapa de tu presencia digital.</h2>
+          <p>Desde una landing inicial hasta aplicaciones e integraciones que ordenan procesos y mejoran la experiencia del usuario.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">✦</span>
+            <h3>Landing Pages de alta conversión</h3>
+            <p>Páginas enfocadas en explicar tu propuesta, sostener la atención y convertir visitas en oportunidades comerciales.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">⌂</span>
+            <h3>Sitios Web Institucionales</h3>
+            <p>Sitios claros y profesionales para presentar tu empresa, servicios, trayectoria y canales de contacto.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">{ }</span>
+            <h3>Aplicaciones Web a Medida</h3>
+            <p>Herramientas digitales diseñadas para resolver flujos específicos con interfaces simples, rápidas y escalables.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">↔</span>
+            <h3>Integración de APIs</h3>
+            <p>Conexión con servicios externos para automatizar tareas, consultar datos y ampliar capacidades de tu sitio.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">↗</span>
+            <h3>Mantenimiento y Optimización</h3>
+            <p>Mejoras de rendimiento, ajustes responsive, actualización de contenido y rediseño de sitios existentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Testimonios</p>
+          <h2>Lo que dicen mis clientes</h2>
+          <p>Experiencias ficticias pero representativas del tipo de colaboración que Vitcop Studio busca construir.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="Calificación de cinco estrellas">★★★★★</div>
+            <p>“Sebastián entendió rápido el mensaje de la marca y lo llevó a una landing clara, elegante y fácil de recorrer. El resultado nos ayudó a ordenar nuestra comunicación.”</p>
+            <footer>
+              <strong>Marina López</strong>
+              <span>Fundadora, Norte Verde</span>
+            </footer>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="Calificación de cinco estrellas">★★★★★</div>
+            <p>“Necesitábamos modernizar el sitio sin perder sobriedad. La propuesta fue profesional, bien documentada y muy cuidada en mobile.”</p>
+            <footer>
+              <strong>Diego Fernández</strong>
+              <span>Director Comercial, Punto Pyme</span>
+            </footer>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="Calificación de cinco estrellas">★★★★★</div>
+            <p>“La integración con nuestro sistema de reservas quedó funcionando con fluidez. Valoramos la comunicación directa y la claridad para explicar cada decisión.”</p>
+            <footer>
+              <strong>Laura Benítez</strong>
+              <span>Operaciones, Ágora Cowork</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Hablemos de tu próximo proyecto web.</h2>
+          <p>Contame qué necesitás construir, rediseñar o integrar. Te respondo con una primera orientación sobre alcance, prioridades y próximos pasos.</p>
+          <ul class="contact-list">
+            <li>Respuesta clara y sin compromiso.</li>
+            <li>Propuesta ajustada a tu etapa actual.</li>
+            <li>Comunicación directa durante el proceso.</li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="company">Empresa <span>(opcional)</span></label>
+            <input type="text" id="company" name="company" autocomplete="organization">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button class="btn btn-primary form-button" type="submit">Enviar mensaje</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-logo" href="#inicio">Vitcop Studio</a>
+        <p>Desarrollo web freelance con foco en claridad, rendimiento y detalle.</p>
+      </div>
+      <ul class="social-links" aria-label="Redes sociales">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="mailto:hola@vitcopstudio.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> Vitcop Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

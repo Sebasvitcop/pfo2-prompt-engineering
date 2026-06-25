@@ -4,7 +4,7 @@ Práctica Formativa Obligatoria 2 de la materia **Desarrollo Web** (IFTS N°29).
 El trabajo consiste en diseñar **un único prompt de alta precisión** y ejecutarlo
 —sin modificar el código manualmente— en **dos agentes de desarrollo de IA**
 distintos, para comparar su capacidad de resolución autónoma generando una
-landing page de servicios freelance.
+landing page de "Vitcop Studio" (servicios freelance de desarrollo web).
 
 ---
 
@@ -29,90 +29,117 @@ La portada permite acceder a:
 
 ## 🧰 Agentes utilizados
 
-| # | Agente | Modelo de lenguaje |
-|---|--------|--------------------|
-| 1 | Codex (OpenAI) | [COMPLETAR, ej. GPT-5-Codex] |
-| 2 | Claude Code | [COMPLETAR, ej. Claude Opus 4.5] |
+| # | Agente | Modelo de lenguaje | Plan |
+|---|--------|--------------------|------|
+| 1 | Codex (OpenAI) | [COMPLETAR, ej. GPT-5-Codex] | Gratuito (incluido en ChatGPT) |
+| 2 | Claude Code | [COMPLETAR, ej. Claude Opus 4.5] | Claude Pro |
 
 > **Restricción cumplida:** no se modificó el código generado por los agentes de
 > forma manual. Cada landing es exactamente la salida autónoma de su agente.
->
-> **Sobre los planes utilizados:** el Agente 1 (Codex) se ejecutó con la versión
-> gratuita incluida en ChatGPT, y el Agente 2 (Claude Code) con una suscripción
-> Claude Pro. Ambos accesos permiten correr el agente de forma autónoma sin costo
-> adicional por token.
 
 ---
 
 ## 📝 Prompt exacto utilizado
 
-El mismo texto se ejecutó, sin cambios, en ambos agentes:
+El mismo texto se ejecutó, sin cambios, en ambos agentes (también disponible en
+[`prompt.txt`](prompt.txt)):
 
 ```
-# ROL Y CONTEXTO
-Actuá como un desarrollador frontend senior especializado en landing pages
-de alta conversión. Tu tarea es generar una landing page profesional, completa
-y lista para producción que promocione los servicios freelance de desarrollo
-web de "Sebastián Vitcop".
+# ROL
+Actuá como un Frontend Senior, diseñador UX/UI y arquitecto de software con
+amplia experiencia en sitios corporativos modernos.
+Trabajá de forma completamente autónoma: tomá todas las decisiones de diseño,
+estructura y contenido sin pedirme aclaraciones.
+Priorizá la calidad visual, la experiencia de usuario, la accesibilidad, la
+mantenibilidad del código y la adaptabilidad a dispositivos móviles.
+
+
+# CONTEXTO
+La Landing Page pertenece a "Vitcop Studio", el proyecto profesional de
+Sebastián Vitcop, estudiante avanzado de la Tecnicatura en Desarrollo Web del
+IFTS N°29, que ofrece servicios freelance de desarrollo web a pymes,
+emprendedores y startups.
+
+Servicios ofrecidos:
+- Landing pages de alta conversión.
+- Sitios web institucionales y corporativos.
+- Aplicaciones web a medida.
+- Integración de APIs y servicios externos.
+- Optimización, mantenimiento y rediseño de sitios existentes.
+
+La imagen del estudio debe transmitir:
+- Profesionalismo y confiabilidad.
+- Cercanía y trato personalizado.
+- Calidad artesanal en el detalle.
+- Modernidad y dominio técnico.
+
+Tono de escritura: profesional pero cercano, en español neutro.
+
 
 # OBJETIVO
-Generar UNA única landing page en un archivo `index.html` autocontenido:
-HTML5 + todo el CSS dentro de una etiqueta <style> + el JavaScript mínimo
-necesario dentro de una etiqueta <script>. Sin dependencias externas, salvo
-una fuente de Google Fonts. Debe ser responsiva, accesible y visualmente
-atractiva.
+Construir una Landing Page completa, funcional, profesional y lista para
+producción.
 
-# PÚBLICO Y TONO
-Público objetivo: pymes, emprendedores y startups que necesitan presencia web.
-Tono: profesional, cercano y confiable.
-Idioma de todos los textos: español.
 
-# SECCIONES OBLIGATORIAS (respetá este orden exacto)
-1. HEADER fijo (sticky) con el nombre/logo "Sebastián Vitcop" y un menú de
-   navegación con anclas a: Sobre mí, Servicios, Testimonios, Contacto.
-   El menú debe colapsar en un menú hamburguesa funcional en mobile.
-2. HERO: título impactante sobre desarrollo web freelance, un subtítulo de una
-   línea y un botón CTA destacado con el texto "Trabajemos juntos" que haga
-   scroll suave hasta la sección Contacto. Agregá un detalle visual de fondo
-   (gradiente sutil o forma geométrica).
-3. SOBRE MÍ: un párrafo presentando a Sebastián como estudiante de la
-   Tecnicatura en Desarrollo Web (IFTS Nº29), apasionado por construir
-   interfaces limpias y soluciones a medida para cada cliente.
-4. SERVICIOS: mínimo 3 tarjetas, cada una con un ícono (puede ser un emoji o
-   SVG simple), un título y una descripción breve. Por ejemplo: "Landing Pages",
-   "Sitios Web Responsivos" y "Optimización y Mantenimiento". Organizá las
-   tarjetas con CSS Grid o Flexbox.
-5. TESTIMONIOS: mínimo 2 reseñas, cada una con el texto del testimonio, el
-   nombre de un cliente ficticio y su rol/empresa.
-6. FORMULARIO DE CONTACTO: solo maquetado visual, SIN backend ni funcionalidad
-   real de envío. Campos: Nombre, Email y Mensaje, más un botón "Enviar".
-   Debe verse profesional y prolijo.
-7. FOOTER con enlaces a redes sociales (GitHub, LinkedIn, Email) y una línea
-   de copyright.
+# TECNOLOGÍAS
+Utilizar únicamente HTML5, CSS3 y JavaScript Vanilla.
+Sin frameworks ni librerías externas. Solo se permite Google Fonts.
+
+
+# ESTRUCTURA DE ARCHIVOS
+Generar exactamente: index.html, styles.css, script.js.
+
+
+# SECCIONES OBLIGATORIAS
+1. HEADER sticky con menú (Inicio, Sobre mí, Servicios, Testimonios, Contacto)
+   y hamburguesa funcional en mobile.
+2. HERO con título, subtítulo, CTA "Trabajemos juntos" y CTA secundario "Ver
+   servicios", y elemento visual de fondo.
+3. SOBRE MÍ con misión, visión y valores en tarjetas.
+4. SERVICIOS: 5 tarjetas (Landing Pages, Sitios Institucionales, Apps Web,
+   APIs, Mantenimiento) con ícono, título, descripción y hover.
+5. TESTIMONIOS: 3 tarjetas con texto, nombre, empresa y rating 5 estrellas.
+6. FORMULARIO de contacto visual con validación JS (sin backend).
+7. FOOTER con redes sociales y copyright del año actual.
+
+
+# DISEÑO
+Inspirado en sitios corporativos tecnológicos modernos. Paleta sobria,
+máximo un color de acento, sombras suaves, bordes redondeados, espaciados
+generosos, tipografía profesional de Google Fonts. Aspecto premium.
+
 
 # REQUISITOS TÉCNICOS
-- HTML5 semántico (header, nav, main, section, article, footer) con lang="es".
-- Metaetiquetas charset UTF-8 y viewport.
-- Una tipografía importada desde Google Fonts.
-- Layout construido con Flexbox y/o CSS Grid.
-- Diseño totalmente responsivo (mobile, tablet, desktop) usando media queries
-  y unidades relativas (%, rem, clamp).
-- Al menos una animación o transición CSS (por ejemplo, efecto hover en botones
-  y tarjetas).
-- Atributo alt en todas las imágenes y buenas prácticas de accesibilidad.
-- Una paleta de colores coherente, sobria y profesional.
-- Comentarios en el código explicando cada sección.
+- HTML5 semántico con lang="es" + meta charset y viewport.
+- Diseño responsive mobile-first con unidades relativas.
+- Al menos una animación o transición CSS.
+- Scroll suave entre secciones.
 
-# FORMATO DE SALIDA
-Devolvé únicamente el archivo `index.html` completo, funcional y autocontenido.
-No uses librerías ni frameworks externos (nada de Bootstrap, Tailwind, React,
-etc.). No agregues explicaciones fuera del código.
 
-# CRITERIOS DE ÉXITO
-La página debe poder abrirse directamente en el navegador y verse profesional
-sin pasos adicionales. Todas las secciones presentes, diseño responsivo y sin
-errores en la consola del navegador.
+# ACCESIBILIDAD
+Labels en formularios, alt en imágenes, contraste adecuado.
+
+
+# JAVASCRIPT
+Toggle de menú mobile, scroll suave, validación de formulario.
+Sin librerías externas.
+
+
+# CALIDAD DEL CÓDIGO
+Limpio, comentado, modular, fácil de mantener.
+
+
+# CRITERIOS DE ACEPTACIÓN
+Todas las secciones presentes, diseño responsive, apariencia profesional,
+3 archivos correctamente vinculados, contenido 100% en español.
+
+
+# FORMATO DE RESPUESTA
+Generá los tres archivos completos. Tomá todas las decisiones de forma
+autónoma. No pidas aclaraciones. Entregá una solución terminada.
 ```
+
+> El archivo `prompt.txt` contiene la versión completa y sin recortes.
 
 ---
 
@@ -130,16 +157,20 @@ errores en la consola del navegador.
 
 ```
 pfo2-prompt-engineering/
-├── index.html              # Portada con los 3 accesos
-├── prompt.txt              # El prompt en texto plano
-├── README.md               # Este archivo
+├── index.html                  # Portada con los 3 accesos
+├── prompt.txt                  # El prompt en texto plano
+├── README.md                   # Este archivo
 ├── agente-1-codex/
-│   └── index.html          # Landing generada por Codex (sin editar)
+│   ├── index.html              # Generado por Codex (sin editar)
+│   ├── styles.css              # Generado por Codex (sin editar)
+│   └── script.js               # Generado por Codex (sin editar)
 ├── agente-2-claude-code/
-│   └── index.html          # Landing generada por Claude Code (sin editar)
+│   ├── index.html              # Generado por Claude Code (sin editar)
+│   ├── styles.css              # Generado por Claude Code (sin editar)
+│   └── script.js               # Generado por Claude Code (sin editar)
 └── img/
-    ├── captura-codex.png        # Captura del sitio del Agente 1
-    └── captura-claude-code.png  # Captura del sitio del Agente 2
+    ├── captura-codex.png       # Captura del sitio del Agente 1
+    └── captura-claude-code.png # Captura del sitio del Agente 2
 ```
 
 ---
@@ -148,9 +179,13 @@ pfo2-prompt-engineering/
 
 El prompt se construyó siguiendo las guías oficiales de **Anthropic** y **OpenAI**:
 
-- **Rol y contexto explícitos** al inicio, para orientar el comportamiento del agente.
-- **Objetivo claro y único** (un solo archivo autocontenido).
-- **Requisitos estructurados y numerados**, sin ambigüedad.
+- **Rol explícito** al inicio (Frontend Senior + UX/UI + arquitecto) para
+  orientar el comportamiento del agente.
+- **Contexto de marca detallado** (qué es Vitcop Studio, valores, tono).
+- **Objetivo único y claro** sin ambigüedad.
+- **Requisitos estructurados y numerados** por sección.
+- **Restricciones positivas y negativas** explícitas ("priorizar" / "evitar").
 - **Formato de salida especificado** de forma estricta.
-- **Restricciones explícitas** (sin frameworks, sin dependencias).
-- **Criterios de éxito medibles** al final.
+- **Criterios de aceptación con checkmarks** al final para que el agente
+  pueda autoverificarse.
+- **Autonomía explícita** ("no pidas aclaraciones") para evitar back-and-forth.

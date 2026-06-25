@@ -1,69 +1,197 @@
 ============================================================
 PROMPT — PFO2 Prompt Engineering en Agentes de IA
-Autor: Sebastián Vitcop
+Autor: Sebastián Vitcop · IFTS N°29
 Este mismo texto se ejecutó SIN MODIFICAR en los dos agentes.
 ============================================================
 
-# ROL Y CONTEXTO
-Actuá como un desarrollador frontend senior especializado en landing pages
-de alta conversión. Tu tarea es generar una landing page profesional, completa
-y lista para producción que promocione los servicios freelance de desarrollo
-web de "Sebastián Vitcop".
+
+# ROL
+Actuá como un Frontend Senior, diseñador UX/UI y arquitecto de software con
+amplia experiencia en sitios corporativos modernos.
+Trabajá de forma completamente autónoma: tomá todas las decisiones de diseño,
+estructura y contenido sin pedirme aclaraciones.
+Priorizá la calidad visual, la experiencia de usuario, la accesibilidad, la
+mantenibilidad del código y la adaptabilidad a dispositivos móviles.
+
+
+# CONTEXTO
+La Landing Page pertenece a "Vitcop Studio", el proyecto profesional de
+Sebastián Vitcop, estudiante avanzado de la Tecnicatura en Desarrollo Web del
+IFTS N°29, que ofrece servicios freelance de desarrollo web a pymes,
+emprendedores y startups.
+
+Servicios ofrecidos:
+- Landing pages de alta conversión.
+- Sitios web institucionales y corporativos.
+- Aplicaciones web a medida.
+- Integración de APIs y servicios externos.
+- Optimización, mantenimiento y rediseño de sitios existentes.
+
+La imagen del estudio debe transmitir:
+- Profesionalismo y confiabilidad.
+- Cercanía y trato personalizado.
+- Calidad artesanal en el detalle.
+- Modernidad y dominio técnico.
+
+Tono de escritura: profesional pero cercano, en español neutro. Evitá clichés
+de marketing vacío. Todo el contenido visible debe estar en español.
+
 
 # OBJETIVO
-Generar UNA única landing page en un archivo `index.html` autocontenido:
-HTML5 + todo el CSS dentro de una etiqueta <style> + el JavaScript mínimo
-necesario dentro de una etiqueta <script>. Sin dependencias externas, salvo
-una fuente de Google Fonts. Debe ser responsiva, accesible y visualmente
-atractiva.
+Construir una Landing Page completa, funcional, profesional y lista para
+producción. El resultado debe parecer un sitio web real, no un ejercicio.
 
-# PÚBLICO Y TONO
-Público objetivo: pymes, emprendedores y startups que necesitan presencia web.
-Tono: profesional, cercano y confiable.
-Idioma de todos los textos: español.
 
-# SECCIONES OBLIGATORIAS (respetá este orden exacto)
-1. HEADER fijo (sticky) con el nombre/logo "Sebastián Vitcop" y un menú de
-   navegación con anclas a: Sobre mí, Servicios, Testimonios, Contacto.
-   El menú debe colapsar en un menú hamburguesa funcional en mobile.
-2. HERO: título impactante sobre desarrollo web freelance, un subtítulo de una
-   línea y un botón CTA destacado con el texto "Trabajemos juntos" que haga
-   scroll suave hasta la sección Contacto. Agregá un detalle visual de fondo
-   (gradiente sutil o forma geométrica).
-3. SOBRE MÍ: un párrafo presentando a Sebastián como estudiante de la
-   Tecnicatura en Desarrollo Web (IFTS Nº29), apasionado por construir
-   interfaces limpias y soluciones a medida para cada cliente.
-4. SERVICIOS: mínimo 3 tarjetas, cada una con un ícono (puede ser un emoji o
-   SVG simple), un título y una descripción breve. Por ejemplo: "Landing Pages",
-   "Sitios Web Responsivos" y "Optimización y Mantenimiento". Organizá las
-   tarjetas con CSS Grid o Flexbox.
-5. TESTIMONIOS: mínimo 2 reseñas, cada una con el texto del testimonio, el
-   nombre de un cliente ficticio y su rol/empresa.
-6. FORMULARIO DE CONTACTO: solo maquetado visual, SIN backend ni funcionalidad
-   real de envío. Campos: Nombre, Email y Mensaje, más un botón "Enviar".
-   Debe verse profesional y prolijo.
-7. FOOTER con enlaces a redes sociales (GitHub, LinkedIn, Email) y una línea
-   de copyright.
+# TECNOLOGÍAS
+Utilizar únicamente HTML5, CSS3 y JavaScript Vanilla.
+NO utilizar: Bootstrap, Tailwind, React, Vue, Angular ni ninguna librería o
+framework externo. Solo se permite importar una tipografía desde Google Fonts.
+
+
+# ESTRUCTURA DE ARCHIVOS
+Generar exactamente estos tres archivos, vinculados correctamente entre sí:
+- index.html
+- styles.css
+- script.js
+
+Mantener una organización clara y mantenible.
+
+
+# SECCIONES OBLIGATORIAS (en este orden exacto)
+
+1. HEADER
+   - Logo/nombre "Vitcop Studio" alineado a la izquierda.
+   - Menú de navegación con anclas a: Inicio, Sobre mí, Servicios,
+     Testimonios, Contacto.
+   - Header fijo (sticky) en la parte superior.
+   - En mobile, menú colapsado a hamburguesa funcional (toggle con JS).
+
+2. HERO SECTION
+   - Título principal impactante sobre desarrollo web freelance.
+   - Subtítulo de una o dos líneas que aclare la propuesta de valor.
+   - Botón principal (CTA): "Trabajemos juntos" → scroll suave a Contacto.
+   - Botón secundario: "Ver servicios" → scroll suave a Servicios.
+   - Elemento visual de fondo: gradiente sutil, forma geométrica o
+     ilustración SVG relacionada con tecnología/código.
+   - Distribución equilibrada con excelente jerarquía visual.
+
+3. SOBRE MÍ
+   - Título: "Sobre mí" o "Sobre el estudio".
+   - Presentar a Sebastián como estudiante avanzado de la Tecnicatura en
+     Desarrollo Web del IFTS N°29, apasionado por construir interfaces limpias
+     y soluciones a medida para cada cliente.
+   - Incluir misión, visión y valores en formato de tarjetas o columnas.
+
+4. SERVICIOS
+   - Título: "Servicios".
+   - Crear exactamente cinco tarjetas de servicio:
+     a) Landing Pages de alta conversión
+     b) Sitios Web Institucionales
+     c) Aplicaciones Web a Medida
+     d) Integración de APIs
+     e) Mantenimiento y Optimización
+   - Cada tarjeta debe contener: ícono (emoji o SVG simple), título,
+     descripción breve y profesional, efecto hover, sombras suaves y bordes
+     redondeados.
+   - Organizar las tarjetas con CSS Grid o Flexbox.
+
+5. TESTIMONIOS
+   - Título: "Lo que dicen mis clientes".
+   - Crear tres testimonios ficticios pero creíbles.
+   - Cada testimonio debe incluir: texto del comentario, nombre del cliente,
+     rol y empresa, y calificación de cinco estrellas.
+   - Presentarlos en formato de tarjetas.
+
+6. FORMULARIO DE CONTACTO
+   - Título: "Contacto" o "Hablemos".
+   - Maquetado visual con los campos: Nombre, Email, Empresa (opcional) y
+     Mensaje.
+   - Botón "Enviar mensaje".
+   - NO implementar backend ni envío real.
+   - Sí implementar validaciones básicas del lado del cliente con JavaScript
+     (campos requeridos y formato de email).
+   - Mostrar mensaje de confirmación al usuario si la validación es exitosa.
+
+7. FOOTER
+   - Nombre del estudio: "Vitcop Studio".
+   - Breve descripción de una línea.
+   - Enlaces a redes sociales: GitHub, LinkedIn, Instagram, Email.
+   - Línea de copyright con el año actual.
+
+
+# DISEÑO
+Inspirate en sitios corporativos tecnológicos modernos.
+
+PRIORIZAR:
+- Elegancia, claridad y legibilidad.
+- Simetría y consistencia visual.
+- Espaciados generosos y consistentes.
+- Sombras suaves y bordes redondeados.
+- Paleta de colores moderna, sobria y coherente (máximo 1 color de acento).
+- Tipografía profesional importada desde Google Fonts.
+- Aspecto visual premium.
+
+EVITAR:
+- Diseños simples, anticuados o de plantilla genérica.
+- Colores excesivamente saturados o llamativos.
+- Elementos desalineados o espaciados inconsistentes.
+- Texto genérico tipo "Lorem ipsum" — todos los textos deben ser realistas y
+  de calidad comercial.
+
 
 # REQUISITOS TÉCNICOS
 - HTML5 semántico (header, nav, main, section, article, footer) con lang="es".
 - Metaetiquetas charset UTF-8 y viewport.
-- Una tipografía importada desde Google Fonts.
-- Layout construido con Flexbox y/o CSS Grid.
-- Diseño totalmente responsivo (mobile, tablet, desktop) usando media queries
-  y unidades relativas (%, rem, clamp).
-- Al menos una animación o transición CSS (por ejemplo, efecto hover en botones
-  y tarjetas).
-- Atributo alt en todas las imágenes y buenas prácticas de accesibilidad.
-- Una paleta de colores coherente, sobria y profesional.
-- Comentarios en el código explicando cada sección.
+- Diseño responsive con enfoque mobile-first, usando media queries y unidades
+  relativas (%, rem, clamp).
+- Correcta visualización en mobile, tablet y desktop.
+- Al menos una animación o transición CSS (efecto hover en botones, tarjetas,
+  o entrada suave en el hero).
+- Desplazamiento suave entre secciones (scroll-behavior smooth o JS).
 
-# FORMATO DE SALIDA
-Devolvé únicamente el archivo `index.html` completo, funcional y autocontenido.
-No uses librerías ni frameworks externos (nada de Bootstrap, Tailwind, React,
-etc.). No agregues explicaciones fuera del código.
 
-# CRITERIOS DE ÉXITO
-La página debe poder abrirse directamente en el navegador y verse profesional
-sin pasos adicionales. Todas las secciones presentes, diseño responsivo y sin
-errores en la consola del navegador.
+# ACCESIBILIDAD
+- Etiquetas HTML semánticas correctas.
+- Labels asociados a cada input del formulario.
+- Atributo alt en todas las imágenes.
+- Buen contraste de colores.
+- Tamaños de fuente adecuados y legibles.
+
+
+# JAVASCRIPT
+Implementar únicamente del lado del cliente:
+- Toggle del menú hamburguesa en mobile.
+- Scroll suave entre secciones.
+- Validación básica del formulario con feedback visual.
+- Efectos visuales suaves opcionales (ej. fade-in al hacer scroll).
+No usar librerías externas.
+
+
+# CALIDAD DEL CÓDIGO
+- Código limpio, legible, modular y bien indentado.
+- Comentarios explicando cada sección principal.
+- Fácil de mantener y de leer.
+- Evitar complejidad innecesaria.
+
+
+# CRITERIOS DE ACEPTACIÓN
+La solución final DEBE cumplir todos estos puntos:
+✓ Header sticky con menú de navegación y hamburguesa funcional en mobile.
+✓ Hero Section con título impactante, subtítulo y dos CTAs.
+✓ Sección Sobre mí con misión, visión y valores.
+✓ Sección Servicios con cinco tarjetas.
+✓ Sección Testimonios con tres reseñas y calificación de cinco estrellas.
+✓ Formulario de contacto visual con validaciones básicas en JS.
+✓ Footer con enlaces a redes sociales y copyright.
+✓ Diseño responsive (mobile, tablet, desktop).
+✓ Apariencia profesional, moderna y coherente.
+✓ Tres archivos: index.html, styles.css, script.js, correctamente vinculados.
+✓ Todo el contenido en español.
+✓ Sitio listo para abrir en el navegador y ver funcionando sin pasos extra.
+
+
+# FORMATO DE RESPUESTA
+Generá los tres archivos completos con todo el código correspondiente.
+Tomá todas las decisiones de diseño, contenido y estructura de forma autónoma.
+No pidas aclaraciones ni información adicional.
+Entregá una solución terminada, profesional y lista para usar.

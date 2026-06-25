@@ -1,9 +1,469 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Pendiente — Claude Code</title>
-<style>body{font-family:sans-serif;background:#f0ebe3;color:#2c2218;display:grid;place-items:center;min-height:100vh;text-align:center;padding:2rem}</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vitcop Studio — Desarrollo web freelance profesional para pymes, emprendedores y startups. Landing pages, sitios institucionales y aplicaciones web a medida.">
+  <title>Vitcop Studio | Desarrollo Web Freelance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><div>
-<h1>⏳ Pendiente de generar</h1>
-<p>Acá va el <strong>index.html</strong> que genere <strong>Claude Code</strong>.<br>Reemplazá este archivo por completo con la salida del agente.</p>
-</div></body></html>
+<body>
+
+  <!-- ==============================
+       HEADER
+       ============================== -->
+  <header class="header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="logo">
+        <span class="logo-bracket">&lt;</span>Vitcop Studio<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#inicio"     class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi"   class="nav-link">Sobre mí</a></li>
+        <li><a href="#servicios"  class="nav-link">Servicios</a></li>
+        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+        <li><a href="#contacto"   class="nav-link nav-link--cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         HERO
+         ============================== -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <!-- Fondo decorativo -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+      </div>
+
+      <div class="container hero-layout">
+        <!-- Contenido textual -->
+        <div class="hero-content">
+          <div class="hero-badge">Disponible para nuevos proyectos ✦</div>
+
+          <h1 class="hero-title" id="heroTitle">
+            Tu próximo sitio web,<br>
+            <span class="hero-title--accent">hecho con precisión.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Diseño, desarrollo y lanzamiento de sitios web que convierten visitantes en clientes.
+            Sin plantillas genéricas: cada proyecto construido desde cero.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contacto"  class="btn btn--primary">Trabajemos juntos</a>
+            <a href="#servicios" class="btn btn--secondary">Ver servicios</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat__number">5+</span>
+              <span class="hero-stat__label">Servicios especializados</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__number">100%</span>
+              <span class="hero-stat__label">Código a medida</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__number">Mobile</span>
+              <span class="hero-stat__label">First siempre</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ilustración SVG decorativa -->
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" class="hero-svg" role="img" aria-label="Ilustración decorativa de editor de código">
+            <defs>
+              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%"   stop-color="#4F8AFF" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.7"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#4F8AFF" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.4"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Ventana de editor principal -->
+            <rect x="30" y="50" width="300" height="230" rx="14" fill="#111827" stroke="#1E293B" stroke-width="1.5"/>
+            <!-- Barra superior del editor -->
+            <rect x="30" y="50" width="300" height="38" rx="14" fill="#1A2235"/>
+            <rect x="30" y="74" width="300" height="14" fill="#1A2235"/>
+            <!-- Botones de ventana -->
+            <circle cx="54"  cy="69" r="6" fill="#FF5F57"/>
+            <circle cx="76"  cy="69" r="6" fill="#FEBC2E"/>
+            <circle cx="98"  cy="69" r="6" fill="#28C840"/>
+
+            <!-- Líneas de código simuladas -->
+            <rect x="54" y="108" width="76"  height="8" rx="4" fill="url(#g1)" opacity="0.95"/>
+            <rect x="138" y="108" width="130" height="8" rx="4" fill="#1E293B"/>
+
+            <rect x="54" y="128" width="38"  height="8" rx="4" fill="#4F8AFF" opacity="0.55"/>
+            <rect x="100" y="128" width="96"  height="8" rx="4" fill="#1E293B"/>
+            <rect x="204" y="128" width="58"  height="8" rx="4" fill="#7C3AED" opacity="0.65"/>
+
+            <rect x="54" y="148" width="120" height="8" rx="4" fill="#1E293B"/>
+
+            <rect x="54" y="168" width="56"  height="8" rx="4" fill="#4F8AFF" opacity="0.7"/>
+            <rect x="118" y="168" width="76"  height="8" rx="4" fill="#1E293B"/>
+            <rect x="202" y="168" width="48"  height="8" rx="4" fill="url(#g2)" opacity="0.8"/>
+
+            <rect x="54" y="188" width="96"  height="8" rx="4" fill="#1E293B"/>
+            <rect x="54" y="208" width="58"  height="8" rx="4" fill="#7C3AED" opacity="0.55"/>
+            <rect x="120" y="208" width="118" height="8" rx="4" fill="#1E293B"/>
+
+            <rect x="54" y="228" width="180" height="8" rx="4" fill="url(#g1)" opacity="0.35"/>
+            <rect x="54" y="248" width="80"  height="8" rx="4" fill="#1E293B"/>
+
+            <!-- Tarjeta flotante — arriba derecha -->
+            <rect x="310" y="80" width="175" height="100" rx="14" fill="#111827" stroke="#4F8AFF" stroke-width="1.5" opacity="0.95"/>
+            <rect x="328" y="100" width="52"  height="7" rx="3.5" fill="#4F8AFF"/>
+            <rect x="328" y="116" width="136" height="5"   rx="2.5" fill="#1E293B"/>
+            <rect x="328" y="130" width="104" height="5"   rx="2.5" fill="#1E293B"/>
+            <rect x="328" y="148" width="72"  height="18"  rx="9"   fill="url(#g1)" opacity="0.85"/>
+
+            <!-- Tarjeta flotante — abajo derecha -->
+            <rect x="260" y="310" width="210" height="80" rx="14" fill="#111827" stroke="#7C3AED" stroke-width="1.5" opacity="0.95"/>
+            <rect x="280" y="330" width="46"  height="7" rx="3.5" fill="#7C3AED"/>
+            <rect x="280" y="346" width="160" height="5" rx="2.5" fill="#1E293B"/>
+            <rect x="280" y="360" width="120" height="5" rx="2.5" fill="#1E293B"/>
+
+            <!-- Conectores punteados -->
+            <line x1="330" y1="280" x2="330" y2="310" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.55"/>
+            <line x1="310" y1="180" x2="310" y2="180" stroke="#4F8AFF" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.55"/>
+
+            <!-- Punto de brillo accent -->
+            <circle cx="398" cy="255" r="3" fill="#4F8AFF" opacity="0.8"/>
+            <circle cx="398" cy="255" r="8" fill="#4F8AFF" opacity="0.12"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SOBRE MÍ
+         ============================== -->
+    <section class="about section" id="sobre-mi" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Quién soy</span>
+          <h2 class="section-title" id="aboutTitle">Sobre el estudio</h2>
+          <p class="section-subtitle">Un desarrollador web que construye con propósito y atención al detalle.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Texto de presentación -->
+          <div class="about-text">
+            <p class="about-intro">
+              Soy Sebastián Vitcop, estudiante avanzado de la Tecnicatura en Desarrollo Web en el <strong>IFTS N°29</strong>.
+              Fundé Vitcop Studio con una convicción clara: cada negocio merece una presencia digital que lo represente de verdad.
+            </p>
+            <p class="about-body">
+              Trabajo de forma freelance con pymes, emprendedores y startups que buscan resultados concretos en la web.
+              No vendo plantillas: escucho cada proyecto, entiendo sus objetivos y construyo soluciones a medida con código
+              limpio, accesible y orientado a la performance.
+            </p>
+            <div class="about-skills" aria-label="Tecnologías y habilidades">
+              <span class="skill-tag">HTML5 · CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Diseño Responsive</span>
+              <span class="skill-tag">UX/UI</span>
+              <span class="skill-tag">APIs REST</span>
+              <span class="skill-tag">Optimización Web</span>
+            </div>
+          </div>
+
+          <!-- Tarjetas de misión / visión / valores -->
+          <div class="about-cards">
+            <div class="about-card fade-in">
+              <span class="about-card__icon" aria-hidden="true">🎯</span>
+              <h3 class="about-card__title">Misión</h3>
+              <p class="about-card__text">Ayudar a pymes, emprendedores y startups a construir una presencia digital sólida, con sitios web que generan resultados reales y reflejan la identidad de cada marca.</p>
+            </div>
+            <div class="about-card fade-in">
+              <span class="about-card__icon" aria-hidden="true">🔭</span>
+              <h3 class="about-card__title">Visión</h3>
+              <p class="about-card__text">Convertirme en un referente del desarrollo web independiente en Argentina, reconocido por la calidad artesanal de cada proyecto y por acompañar el crecimiento de mis clientes a largo plazo.</p>
+            </div>
+            <div class="about-card fade-in">
+              <span class="about-card__icon" aria-hidden="true">💎</span>
+              <h3 class="about-card__title">Valores</h3>
+              <p class="about-card__text">Transparencia en cada decisión, compromiso con los plazos, atención al detalle que marca la diferencia, y comunicación directa y honesta en todo el proceso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SERVICIOS
+         ============================== -->
+    <section class="services section" id="servicios" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Qué ofrezco</span>
+          <h2 class="section-title" id="servicesTitle">Servicios</h2>
+          <p class="section-subtitle">Soluciones web diseñadas para acompañar cada etapa de tu negocio.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card fade-in">
+            <span class="service-card__icon" aria-hidden="true">🚀</span>
+            <h3 class="service-card__title">Landing Pages de Alta Conversión</h3>
+            <p class="service-card__text">Páginas de aterrizaje diseñadas para convertir visitantes en clientes. Estructura persuasiva, carga ultrarrápida, copywriting orientado a la acción y CTAs estratégicamente ubicados.</p>
+          </article>
+
+          <article class="service-card fade-in">
+            <span class="service-card__icon" aria-hidden="true">🏢</span>
+            <h3 class="service-card__title">Sitios Web Institucionales</h3>
+            <p class="service-card__text">Presencia digital corporativa sólida y profesional. Diseño alineado con la identidad de tu marca, contenido claro y navegación intuitiva que transmite confianza desde el primer scroll.</p>
+          </article>
+
+          <article class="service-card fade-in">
+            <span class="service-card__icon" aria-hidden="true">⚙️</span>
+            <h3 class="service-card__title">Aplicaciones Web a Medida</h3>
+            <p class="service-card__text">Desarrollo de interfaces y lógica de frontend para aplicaciones con requerimientos específicos. Desde paneles de administración hasta herramientas internas para equipos de trabajo.</p>
+          </article>
+
+          <article class="service-card fade-in">
+            <span class="service-card__icon" aria-hidden="true">🔗</span>
+            <h3 class="service-card__title">Integración de APIs</h3>
+            <p class="service-card__text">Conexión de tu sitio con servicios externos: pasarelas de pago, CRMs, plataformas de email marketing, redes sociales y cualquier API que necesites para automatizar procesos.</p>
+          </article>
+
+          <article class="service-card fade-in">
+            <span class="service-card__icon" aria-hidden="true">🛠️</span>
+            <h3 class="service-card__title">Mantenimiento y Optimización</h3>
+            <p class="service-card__text">Revisión, actualización y mejora continua de sitios existentes. Optimización de velocidad, corrección de errores, mejoras de accesibilidad y adaptación a nuevas necesidades.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         TESTIMONIOS
+         ============================== -->
+    <section class="testimonials section" id="testimonios" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Clientes</span>
+          <h2 class="section-title" id="testimonialsTitle">Lo que dicen mis clientes</h2>
+          <p class="section-subtitle">Resultados que hablan por sí solos.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card fade-in">
+            <div class="testimonial-stars" aria-label="Calificación: 5 estrellas">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "Sebastián transformó por completo la imagen de nuestra consultora. El sitio nuevo no solo se ve mucho mejor: desde el lanzamiento recibimos un 40% más de consultas semanales. Trabajo impecable y comunicación excelente durante todo el proceso."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">MA</div>
+              <div>
+                <cite class="testimonial-name">Marcela Andrade</cite>
+                <p class="testimonial-role">Directora · Andrade Consultoría</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card fade-in">
+            <div class="testimonial-stars" aria-label="Calificación: 5 estrellas">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "Necesitaba una landing page para lanzar mi producto digital en tiempo récord. Sebastián entendió exactamente lo que buscaba, propuso mejoras que yo no había pensado y entregó todo antes del plazo. El resultado superó mis expectativas."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">LR</div>
+              <div>
+                <cite class="testimonial-name">Lucas Rodríguez</cite>
+                <p class="testimonial-role">Fundador · LaunchFast</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card fade-in">
+            <div class="testimonial-stars" aria-label="Calificación: 5 estrellas">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "Llevábamos años con un sitio desactualizado que nos daba vergüenza mostrar. Vitcop Studio lo rediseñó completamente, lo integró con nuestro sistema de turnos y ahora el equipo administra todo sin depender de soporte técnico. Muy recomendable."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">CP</div>
+              <div>
+                <cite class="testimonial-name">Carolina Peralta</cite>
+                <p class="testimonial-role">Gerente Comercial · Clínica del Norte</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACTO
+         ============================== -->
+    <section class="contact section" id="contacto" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Información de contacto -->
+          <div class="contact-info">
+            <span class="section-tag">Hablemos</span>
+            <h2 class="section-title contact-title" id="contactTitle">¿Tenés un proyecto en mente?</h2>
+            <p class="contact-intro">
+              Contame de qué se trata. Respondo en menos de 24 horas hábiles y analizamos juntos cómo puedo ayudarte.
+            </p>
+            <ul class="contact-details" role="list">
+              <li class="contact-detail">
+                <span class="contact-detail__icon" aria-hidden="true">📧</span>
+                <span>sebass.9797@gmail.com</span>
+              </li>
+              <li class="contact-detail">
+                <span class="contact-detail__icon" aria-hidden="true">📍</span>
+                <span>Buenos Aires, Argentina · Trabajo en remoto</span>
+              </li>
+              <li class="contact-detail">
+                <span class="contact-detail__icon" aria-hidden="true">🕐</span>
+                <span>Respuesta en &lt; 24 horas hábiles</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formulario -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+
+              <div class="form-group">
+                <label for="name">Nombre <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" autocomplete="name" required aria-required="true" aria-describedby="nameError">
+                <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" required aria-required="true" aria-describedby="emailError">
+                <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Empresa <span class="optional">(opcional)</span></label>
+                <input type="text" id="company" name="company" placeholder="Nombre de tu empresa o proyecto" autocomplete="organization">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensaje <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Contame sobre tu proyecto, qué necesitás y cuándo lo necesitás..." required aria-required="true" aria-describedby="messageError"></textarea>
+                <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+                <span aria-hidden="true">✓</span> ¡Mensaje recibido! Te respondo en menos de 24 horas hábiles.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+       ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-brand">
+          <a href="#inicio" class="logo logo--footer">
+            <span class="logo-bracket">&lt;</span>Vitcop Studio<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">Desarrollo web freelance para pymes, emprendedores y startups.</p>
+        </div>
+
+        <!-- Navegación -->
+        <nav class="footer-nav" aria-label="Navegación de pie de página">
+          <h4 class="footer-nav__title">Navegación</h4>
+          <ul role="list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+          <h4 class="footer-nav__title">Redes</h4>
+          <ul class="social-links" role="list">
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Vitcop Studio">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Vitcop Studio">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Vitcop Studio">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:sebass.9797@gmail.com" aria-label="Enviar email a Vitcop Studio">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Vitcop Studio &middot; Todos los derechos reservados.</p>
+        <p class="footer-bottom__tagline">Hecho con ♥ en Buenos Aires</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

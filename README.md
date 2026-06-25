@@ -12,13 +12,13 @@ landing page de "Vitcop Studio" (servicios freelance de desarrollo web).
 
 - **Nombre:** Sebastián Vitcop
 - **Materia:** Desarrollo Web — IFTS N°29
-- **Comisión:** Viernes
+- **Comisión:** Viernes -  2° E
 
 ---
 
 ## 🚀 Deploy unificado
 
-🔗 **Portada (acceso a las 3 opciones):** `https://[COMPLETAR-TU-DEPLOY].vercel.app/`
+🔗 **Portada (acceso a las 3 opciones):** `https://pfo2-vitcop.vercel.app/`
 
 La portada permite acceder a:
 1. El prompt utilizado (texto plano)

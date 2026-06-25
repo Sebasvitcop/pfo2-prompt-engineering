@@ -31,8 +31,8 @@ La portada permite acceder a:
 
 | # | Agente | Modelo de lenguaje | Plan |
 |---|--------|--------------------|------|
-| 1 | Codex (OpenAI) | [COMPLETAR, ej. GPT-5-Codex] | Gratuito (incluido en ChatGPT) |
-| 2 | Claude Code | [COMPLETAR, ej. Claude Opus 4.5] | Claude Pro |
+| 1 | Codex (OpenAI) | Codex (GPT-5.5 High) |
+| 2 | Claude Code | Claude Sonnet 4.6 | Claude Pro |
 
 > **Restricción cumplida:** no se modificó el código generado por los agentes de
 > forma manual. Cada landing es exactamente la salida autónoma de su agente.
